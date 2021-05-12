@@ -17,7 +17,7 @@ function App() {
     cancelToken = axios.CancelToken.source();
 
     const result = await axios.get(
-      `http://www.omdbapi.com/?apikey=a1ee8b9e&t=${query}`,
+      `https://www.omdbapi.com/?apikey=a1ee8b9e&t=${query}`,
       { cancelToken: cancelToken.token }
     );
 
